@@ -4,42 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>주간 보스 계산기</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .item {
-            margin-bottom: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .total {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .result {
-            margin-top: 20px;
-        }
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-        }
-    </style>
-    <link></head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <nav class="navbar navbar-dark bg-dark" style="margin-bottom: 1%;">
         <div class="container-fluid">
-          <a class="navbar-brand mb-0 h1" href="http://localhost:3000/">보스 계산기</a>
+            <a class="navbar-brand mb-0 h1" href="http://localhost:3000/">보스 계산기</a>
+            <a href="add.html">보스 데이터 추가</a>
         </div>
-      </nav>
-    <div id="bossList" class="container-md mx-auto justify-content-center"  ></div>
-    <button id="calculateButton">계산하기</button>
-    <div class="result">
+    </nav>
+    <div id="bossList" class="container-md mx-auto"></div>
+    <button id="calculateButton" class="btn calculate-icon" style="font-size: 8px;">결과 보기</button>
+    <!-- 결과창 -->
+    <div class="result d-none">
         <div class="total">
             총 금액: <span id="totalPrice">0</span> 메소
         </div>
@@ -47,7 +25,7 @@
             총 갯수: <span id="totalCount">0</span> 개
         </div>
     </div>
-    <a href="add.html">보스 데이터 추가</a>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'BMJUA';
+}
+body, html {
+    height: 100%; /* 전체 높이를 화면에 맞춤 */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem; /* 기본 폰트 크기 */
+}
+
+@media (min-width: 576px) {
+    body {
+        font-size: 1.2rem; /* 작은 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1.4rem; /* 중간 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 1.6rem; /* 큰 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 1.8rem; /* 매우 큰 화면 폰트 크기 */
+    }
+}
+
+.navbar {
+    width: 100%; /* 네비게이션 바 너비를 전체로 설정 */
+}
+
+#bossList {
+    height: calc(100% - 56px); /* 네비게이션 바 높이를 제외한 나머지 높이의 70% */
+}
+
+.calculate-icon {
+    position: fixed;
+    right: 20px; /* 화면 우측 하단에 위치 */
+    bottom: 20px;
+    z-index: 1000; /* 다른 요소들 위에 표시 */
+    border-radius: 50%; /* 버튼을 원형으로 만듬 */
+    width: 60px; /* 아이콘 크기 */
+    height: 60px;
+    background-color: #007bff; /* 배경색 */
+    color: white; /* 아이콘 색상 */
+    font-size: 24px; /* 아이콘 크기 */
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* 그림자 추가 */
+    cursor: pointer;
+}
+
+.result {
+    position: fixed;
+    right: 20px;
+    bottom: 100px; /* 계산하기 버튼 위에 위치 */
+    width: 480px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 10px;
+    display: none; /* 기본적으로 숨김 */
+    z-index: 999;
+}
+
+.d-none {
+    display: none;
+}
+
+.button-container {
+    margin-top: 20px; /* 버튼 상단 여백 */
+}
+
+.total {
+    font-size: 1.25rem; /* 기본 폰트 크기 설정 */
+    font-weight: bold;
+    color: #007bff; /* 폰트 색상 */
+    margin-bottom: 10px; /* 마진 설정 */
+}
+
+
+.item {
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 내부 요소들을 세로 중앙에 위치시킴 */
+    justify-content: flex-start; /* 좌측 정렬 */
+    padding: 10px; /* 패딩 설정 */
+    border: 1px solid #ccc; /* 테두리 설정 */
+    border-radius: 8px; /* 테두리 둥글게 설정 */
+    background-color: #f8f9fa; /* 배경 색상 */
+    margin-bottom: 20px;
+}
+
+.item strong {
+    margin-right: 1%;
+    font-size: 1.5rem;
+    color: #343a40;
+}
+
+.switch-container {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.switch-container input[type="checkbox"] {
+    display: none;
+}
+
+.switch-container label {
+    background-color: #e9ecef;
+    color: #343a40;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.switch-container input[type="checkbox"]:checked + label {
+    background-color: #007bff;
+    color: white;
+}
+
+.price-display {
+    margin-left: auto; /* 왼쪽 마진을 자동으로 설정하여 요소를 오른쪽으로 밀어냄 */
+    font-size: 1rem; /* 폰트 크기 */
+    font-weight: bold; /* 폰트 두께 */
+    color: #007bff; /* 폰트 색상 */
+    display: inline-block; /* 인라인 블록 요소로 설정 */
+}
+
+.total {
+    font-size: 1.25rem; /* 기본 폰트 크기 설정 */
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+    .total {
+        font-size: 1.5rem; /* 작은 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 768px) {
+    .total {
+        font-size: 1.75rem; /* 중간 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 992px) {
+    .total {
+        font-size: 2rem; /* 큰 화면 폰트 크기 */
+    }
+}
+
+@media (min-width: 1200px) {
+    .total {
+        font-size: 2.25rem; /* 매우 큰 화면 폰트 크기 */
+    }
+}
